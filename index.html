@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="COGITARI - Portal de notícias sobre Automação, Inteligência Artificial e Marketing Digital. Fique por dentro das últimas tendências em tecnologia.">
+    <meta name="keywords" content="automação, inteligência artificial, IA, marketing digital, tecnologia, inovação">
+    <meta name="author" content="COGITARI">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="COGITARI - Automação, IA e Marketing Digital">
+    <meta property="og:description" content="Explore as últimas tendências em IA, automação e marketing digital">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="COGITARI - Automação, IA e Marketing Digital">
+    
+    <title>COGITARI - Automação, IA e Marketing Digital</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon (opcional - adicione seu favicon.ico na raiz do projeto) -->
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+    <style>
+        * {
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        body {
+            background-color: #020511;
+            overflow-x: hidden;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #2F80ED 0%, #7B42F6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(90deg, #2F80ED 0%, #7B42F6 100%);
+        }
+        
+        .glass-card {
+            background: rgba(5, 10, 37, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .glass-header {
+            background: rgba(5, 10, 37, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.3;
+            z-index: 0;
+        }
+        
+        .orb-1 {
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(90deg, #2F80ED 0%, #7B42F6 100%);
+            top: -200px;
+            right: -100px;
+        }
+        
+        .orb-2 {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #7B42F6 0%, #2F80ED 100%);
+            top: 40%;
+            left: -150px;
+        }
+        
+        .orb-3 {
+            width: 600px;
+            height: 600px;
+            background: linear-gradient(45deg, #2F80ED 0%, #7B42F6 100%);
+            bottom: -200px;
+            right: 10%;
+        }
+        
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            border-color: rgba(127, 66, 246, 0.5);
+            box-shadow: 0 20px 40px rgba(47, 128, 237, 0.2);
+        }
+        
+        .tag-pill {
+            background: rgba(47, 128, 237, 0.15);
+            border: 1px solid rgba(47, 128, 237, 0.3);
+        }
+    </style>
+</head>
+<body class="text-slate-200">
+    
+    <!-- Background Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    
+    <!-- Header -->
+    <header class="glass-header fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-3xl font-bold gradient-text">COGITARI</div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-slate-200 hover:text-white transition">Automação</a>
+                    <a href="#" class="text-slate-200 hover:text-white transition">IA</a>
+                    <a href="#" class="text-slate-200 hover:text-white transition">Marketing</a>
+                    <a href="#" class="text-slate-200 hover:text-white transition">Ferramentas</a>
+                </nav>
+                
+                <button class="gradient-bg text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition">
+                    Assinar Newsletter
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 px-6">
+        <div class="container mx-auto max-w-6xl relative z-10">
+            <div class="text-center mb-12">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                    O Futuro da <span class="gradient-text">Automação</span> 
+                    Começa Aqui
+                </h1>
+                <p class="text-xl text-slate-300 max-w-2xl mx-auto">
+                    Explore as últimas tendências em IA, automação e marketing digital que estão transformando o mercado global
+                </p>
+            </div>
+            
+            <!-- Featured Card -->
+            <div class="glass-card rounded-3xl p-8 hover-lift max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="md:w-2/5">
+                        <div class="w-full h-64 rounded-2xl gradient-bg flex items-center justify-center text-white text-6xl font-bold">
+                            AI
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 flex flex-col justify-center">
+                        <div class="flex gap-2 mb-4">
+                            <span class="tag-pill text-xs px-3 py-1 rounded-full">#IA</span>
+                            <span class="tag-pill text-xs px-3 py-1 rounded-full">#Automação</span>
+                        </div>
+                        <h2 class="text-3xl font-bold text-white mb-4">
+                            GPT-5 e o Próximo Salto da Inteligência Artificial Generativa
+                        </h2>
+                        <p class="text-slate-300 mb-6">
+                            Novas capacidades de raciocínio multimodal prometem revolucionar a forma como interagimos com sistemas inteligentes no dia a dia empresarial.
+                        </p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 font-medium flex items-center gap-2">
+                            Leia mais →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- News Grid -->
+    <section class="relative py-20 px-6">
+        <div class="container mx-auto max-w-6xl relative z-10">
+            <h2 class="text-4xl font-bold text-white mb-12">Últimas Atualizações</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- News Card 1 -->
+                <div class="glass-card rounded-2xl p-6 hover-lift">
+                    <div class="w-full h-40 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 mb-4"></div>
+                    <div class="flex gap-2 mb-3">
+                        <span class="tag-pill text-xs px-3 py-1 rounded-full">#Marketing</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        Como a IA está Personalizando Campanhas em Tempo Real
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Ferramentas de machine learning analisam comportamento do consumidor instantaneamente para otimizar conversões.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 text-sm font-medium">Ler artigo →</a>
+                </div>
+                
+                <!-- News Card 2 -->
+                <div class="glass-card rounded-2xl p-6 hover-lift">
+                    <div class="w-full h-40 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 mb-4"></div>
+                    <div class="flex gap-2 mb-3">
+                        <span class="tag-pill text-xs px-3 py-1 rounded-full">#Automação</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        RPA 2024: Bots que Pensam e Decidem Sozinhos
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        A nova geração de robotic process automation combina IA cognitiva com fluxos empresariais complexos.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 text-sm font-medium">Ler artigo →</a>
+                </div>
+                
+                <!-- News Card 3 -->
+                <div class="glass-card rounded-2xl p-6 hover-lift">
+                    <div class="w-full h-40 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 mb-4"></div>
+                    <div class="flex gap-2 mb-3">
+                        <span class="tag-pill text-xs px-3 py-1 rounded-full">#IA</span>
+                        <span class="tag-pill text-xs px-3 py-1 rounded-full">#Marketing</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        Chatbots Multilingues Conquistam Mercados Globais
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Empresas reportam aumento de 300% no engagement usando assistentes virtuais com IA conversacional.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 text-sm font-medium">Ler artigo →</a>
+                </div>
+                
+                <!-- News Card 4 -->
+                <div class="glass-card rounded-2xl p-6 hover-lift">
+                    <div class="w-full h-40 rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 mb-4"></div>
+                    <div class="flex gap-2 mb-3">
+                        <span class="tag-pill text-xs px-3 py-1 rounded-full">#Automação</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        Workflow Inteligente: Zapier vs Make vs n8n
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Comparativo completo das principais plataformas de automação no-code para empresas modernas.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 text-sm font-medium">Ler artigo →</a>
+                </div>
+                
+                <!-- News Card 5 -->
+                <div class="glass-card rounded-2xl p-6 hover-lift">
+                    <div class="w-full h-40 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-600 mb-4"></div>
+                    <div class="flex gap-2 mb-3">
+                        <span class="tag-pill text-xs px-3 py-1 rounded-full">#IA</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        Computer Vision Revoluciona o E-commerce de Moda
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Tecnologia de reconhecimento visual permite buscas por imagem e prova virtual de roupas.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 text-sm font-medium">Ler artigo →</a>
+                </div>
+                
+                <!-- News Card 6 -->
+                <div class="glass-card rounded-2xl p-6 hover-lift">
+                    <div class="w-full h-40 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-600 mb-4"></div>
+                    <div class="flex gap-2 mb-3">
+                        <span class="tag-pill text-xs px-3 py-1 rounded-full">#Marketing</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">
+                        SEO com IA: Como Algoritmos Preveem Tendências de Busca
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Ferramentas de inteligência artificial antecipam palavras-chave emergentes antes da concorrência.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 text-sm font-medium">Ler artigo →</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trending Topics Sidebar -->
+    <section class="relative py-20 px-6">
+        <div class="container mx-auto max-w-6xl relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <div class="lg:col-span-2">
+                    <h2 class="text-3xl font-bold text-white mb-8">Ferramentas da Semana</h2>
+                    
+                    <div class="glass-card rounded-2xl p-6 mb-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-16 h-16 rounded-xl gradient-bg flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
+                                01
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">Cursor AI</h3>
+                                <p class="text-slate-400 text-sm">Editor de código com IA integrada que sugere e completa blocos inteiros de programação em tempo real.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card rounded-2xl p-6 mb-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-16 h-16 rounded-xl gradient-bg flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
+                                02
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">Notion AI</h3>
+                                <p class="text-slate-400 text-sm">Assistente inteligente para produtividade que escreve, resume e organiza documentos automaticamente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card rounded-2xl p-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-16 h-16 rounded-xl gradient-bg flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
+                                03
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">Midjourney V6</h3>
+                                <p class="text-slate-400 text-sm">Gerador de imagens com qualidade fotorrealística e controle avançado de estilos artísticos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-8">Trending Topics</h2>
+                    
+                    <div class="glass-card rounded-2xl p-6">
+                        <ul class="space-y-4">
+                            <li class="pb-4 border-b border-white/10">
+                                <a href="#" class="text-slate-200 hover:text-white transition">
+                                    <span class="gradient-text font-bold">#1</span> Gemini Ultra Launch
+                                </a>
+                            </li>
+                            <li class="pb-4 border-b border-white/10">
+                                <a href="#" class="text-slate-200 hover:text-white transition">
+                                    <span class="gradient-text font-bold">#2</span> OpenAI Sora Video AI
+                                </a>
+                            </li>
+                            <li class="pb-4 border-b border-white/10">
+                                <a href="#" class="text-slate-200 hover:text-white transition">
+                                    <span class="gradient-text font-bold">#3</span> Meta Llama 3 Release
+                                </a>
+                            </li>
+                            <li class="pb-4 border-b border-white/10">
+                                <a href="#" class="text-slate-200 hover:text-white transition">
+                                    <span class="gradient-text font-bold">#4</span> AI Regulation EU
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-slate-200 hover:text-white transition">
+                                    <span class="gradient-text font-bold">#5</span> Autonomous Agents
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="glass-card rounded-2xl p-6 mt-6 text-center">
+                        <h3 class="text-xl font-bold text-white mb-3">Receba Insights Semanais</h3>
+                        <p class="text-slate-400 text-sm mb-4">As principais notícias de tech direto no seu email</p>
+                        <input type="email" placeholder="seu@email.com" class="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-white placeholder-slate-500 mb-3 focus:outline-none focus:border-blue-500">
+                        <button class="w-full gradient-bg text-white py-2 rounded-lg font-medium hover:opacity-90 transition">
+                            Inscrever-se
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="relative bg-[#050A25] py-12 px-6 mt-20">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="text-2xl font-bold gradient-text mb-4">COGITARI</div>
+                    <p class="text-slate-400 text-sm">
+                        Seu portal de referência em automação, IA e marketing digital.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Conteúdo</h4>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Automação</a></li>
+                        <li><a href="#" class="hover:text-white transition">Inteligência Artificial</a></li>
+                        <li><a href="#" class="hover:text-white transition">Marketing Digital</a></li>
+                        <li><a href="#" class="hover:text-white transition">Ferramentas</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Empresa</h4>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Sobre Nós</a></li>
+                        <li><a href="#" class="hover:text-white transition">Equipe</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contato</a></li>
+                        <li><a href="#" class="hover:text-white transition">Anuncie</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Social</h4>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-white transition">Twitter</a></li>
+                        <li><a href="#" class="hover:text-white transition">YouTube</a></li>
+                        <li><a href="#" class="hover:text-white transition">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 text-center text-slate-500 text-sm">
+                <p>© 2024 COGITARI. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
